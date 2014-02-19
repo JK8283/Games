@@ -5,6 +5,8 @@ Games::Application.routes.draw do
 
   resources :secret_numbers, only: [:new, :index, :show]
 
+  resources :rock_paper_scissors, only: [:new, :show]
+
   # get 'games' => 'games#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

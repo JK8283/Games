@@ -1,0 +1,36 @@
+<% if @opponent_choice == "Paper" %>
+	<% if @user_choice == "Scissors" %>
+		<h2> Congrats! You won! </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% elsif @user_choice == "Paper" %>
+		<h2> You tie. </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% else %>
+		<h2> Sorry, you lost. </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% end %>
+<% elsif @opponent_choice == "Rock" %>
+	<% if @user_choice == "Paper" %>
+		<h2> Congrats! You won! </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% elsif @user_choice == "Rock" %>
+		<h2> You tie. </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% else %>
+		<h2> Sorry, you lost. </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% end %>
+<% elsif @opponent_choice == "Scissors" %> 
+	<% if @user_choice == "Rock" %>
+		<h2> Congrats! You won! </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% elsif @user_choice == "Scissors" %>
+		<h2> You tie. </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% else %>
+		<h2> Sorry, you lost. </h2>
+		<p> The opponent choice was <%= @opponent_choice %> </p>
+	<% end %>
+<% end %>
+
+<h3> <%= link_to "Play Again", new_rock_paper_scissor_path %></h3>
