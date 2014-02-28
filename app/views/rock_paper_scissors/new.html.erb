@@ -2,6 +2,6 @@
 
 <p>To play this game, all you have to do is guess either: Rock, Paper, Scissors. Click on a choice below:</p>
 
-<% (["Rock", "Paper", "Scissors"]).each do |choice| %>
+<% ["Rock", "Paper", "Scissors"].each do |choice| %>
 	<%= link_to choice, rock_paper_scissor_path(choice) %>
 	<% end %>

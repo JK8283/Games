@@ -5,7 +5,7 @@
 	<% elsif @user_choice == "Paper" %>
 		<h2> You tie. </h2>
 		<p> The opponent choice was <%= @opponent_choice %> </p>
-	<% else %>
+	<% elsif @user_choice == "Rock" %>
 		<h2> Sorry, you lost. </h2>
 		<p> The opponent choice was <%= @opponent_choice %> </p>
 	<% end %>
@@ -16,7 +16,7 @@
 	<% elsif @user_choice == "Rock" %>
 		<h2> You tie. </h2>
 		<p> The opponent choice was <%= @opponent_choice %> </p>
-	<% else %>
+	<% elsif @user_choice == "Scissors" %>
 		<h2> Sorry, you lost. </h2>
 		<p> The opponent choice was <%= @opponent_choice %> </p>
 	<% end %>
@@ -27,7 +27,7 @@
 	<% elsif @user_choice == "Scissors" %>
 		<h2> You tie. </h2>
 		<p> The opponent choice was <%= @opponent_choice %> </p>
-	<% else %>
+	<% elsif @user_choice == "Paper" %>
 		<h2> Sorry, you lost. </h2>
 		<p> The opponent choice was <%= @opponent_choice %> </p>
 	<% end %>
